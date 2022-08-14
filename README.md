@@ -1,8 +1,5 @@
 Unpaired Generative Molecule-to-Molecule Translation code.
 
-We run all training and experiments on Ubuntu 18.04.5 using one Nvidia GeForce RTX 2080 Ti 11GB GPU, two Intel
-13 Xeon Gold 6230 2.10GHZ CPUs and 64GB RAM memory.
-
 
 # Installation:
 1. Install conda / minicaonda

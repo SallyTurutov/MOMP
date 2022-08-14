@@ -11,8 +11,6 @@ Unpaired Generative Molecule-to-Molecule Translation code.
     ii. From the main folder run: python handle_patents_dataset.py \
     iii. Move the generated SureChEMBL.txt file to dataset/QED
 
-All dataset files located in dataset folder.
-
 # Training:
 From the main folder run:
 

@@ -6,9 +6,9 @@ Unpaired Generative Molecule-to-Molecule Translation code.
 2. From the main folder run:\
     i. conda env create -f environment.yml\
     ii. conda activate MOMP
-3. Download SureChEMBL dataset from: http://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBLccs/
-    i. Lockate the downloaded dataset in dataset/SureChEMBL
-    ii. From the main folder run: python handle_patents_dataset.py
+3. Download SureChEMBL dataset from: http://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBLccs/ \
+    i. Lockate the downloaded dataset in dataset/SureChEMBL \
+    ii. From the main folder run: python handle_patents_dataset.py \
     iii. Move the generated SureChEMBL.txt file to dataset/QED
 
 All dataset files located in dataset folder.

@@ -53,8 +53,8 @@ def parse_arguments():
     parser.add_argument('--kl_loss', default=True, action='store_true', help='use kl loss during training or not')
     parser.add_argument('--use_fp', default=True, action='store_true', help='does translator use molecule fp')
     parser.add_argument('--use_baseline_1', default=False, action='store_true', help='Only one cycle experiment')
-    parser.add_argument('--use_baseline_2', default=False, action='store_true', help='Two separate cycles experiment')
-    parser.add_argument('--use_baseline_3', default=False, action='store_true', help='Add EET-Net component experiment')
+    parser.add_argument('--use_two_separate_cycles', default=False, action='store_true', help='Two separate cycles experiment')
+    parser.add_argument('--use_add_EETN', default=False, action='store_true', help='Add EETN component experiment')
     parser.add_argument('--no_EET_Net', default=False, action='store_true', help='disable EET-Net')
     parser.add_argument('--no_DEET_Net', default=False, action='store_true', help='disable DEET-Net')
     parser.add_argument('--no_dist_loss', default=False, action='store_true', help='disable Dist-loss')
@@ -349,7 +349,7 @@ if __name__ == "__main__":
                 # update statistics
                 stats.update_total_loss(loss, None, loss_AP, None)
 
-            elif args.use_baseline_2:
+            elif args.use_two_separate_cycles:
 
                 loss_AB = train_iteration_AB(real_A, real_B, model_A, model_B, T_AB, T_BA, optimizer_T, args, patentset)
 
@@ -360,7 +360,7 @@ if __name__ == "__main__":
                 # update statistics
                 stats.update_total_loss(loss, loss_AB, None, None, loss_BP)
 
-            elif args.use_baseline_3:
+            elif args.use_add_EETN:
 
                 loss_AB = train_iteration_AB(real_A, real_B, model_A, model_B, T_AB, T_BA, optimizer_T, args, patentset)
 

@@ -34,16 +34,14 @@ check_testset (line 23) [Main Results: Molecule Optimization] -> True / False.
 
 
 # Ablation Experiments  :
-Druing training::no_EET_Net
+Druing training and :
 1. No Pre-train		    -> no_pre_train_models to True.
-2. NO EETN 			    -> no_EET_Net to True.
+2. NO Dist-loss 		-> no_dist_loss to True.
 3. NO fp 			    -> use_fp to False.
 4. Two separate cycles  -> use_two_separate_cycles to True.
 5. Add EETN 	        -> use_add_EETN to True.
 
 For testing, run regularly except for these changes:
-1. NO EETN 			    -> no_EET_Net to True.
-2. NO fp 			    -> use_fp to False.
-3. Only fp			    -> use_fp to False.
-4. Two separate cycles  -> use_two_separate_cycles to True.
-5. Add EETN 	        -> use_add_EETN to True.
+1. NO fp 			    -> use_fp to False.
+2. Two separate cycles  -> use_two_separate_cycles to True.
+3. Add EETN 	        -> use_add_EETN to True.

@@ -1,4 +1,4 @@
-name: some name
+name: MOMP
 channels:
 - pytorch
 - defaults

@@ -34,7 +34,7 @@ check_testset (line 23) [Main Results: Molecule Optimization] -> True / False.
 
 
 # Ablation Experiments  :
-Druing training and :
+Druing training, run regularly except for these changes:
 1. No Pre-train		    -> no_pre_train_models to True.
 2. NO Dist-loss 		-> no_dist_loss to True.
 3. NO fp 			    -> use_fp to False.

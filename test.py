@@ -39,8 +39,8 @@ def parse_arguments():
     # ablation
     parser.add_argument('--use_fp', default=True, action='store_true', help='does translator use molecule fp')
     parser.add_argument('--use_baseline_1', default=False, action='store_true', help='Only one cycle experiment')
-    parser.add_argument('--use_baseline_2', default=False, action='store_true', help='Two separate cycles experiment')
-    parser.add_argument('--use_baseline_3', default=False, action='store_true', help='Add EET-Net component experiment')
+    parser.add_argument('--use_two_separate_cycles', default=False, action='store_true', help='Two separate cycles experiment')
+    parser.add_argument('--use_add_EETN', default=False, action='store_true', help='Add EETN component experiment')
     parser.add_argument('--no_EET_Net', default=False, action='store_true', help='disable EET-Net')
     parser.add_argument('--no_DEET_Net', default=False, action='store_true', help='disable DEET-Net')
 

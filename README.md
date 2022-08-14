@@ -12,7 +12,7 @@ All dataset files located in dataset folder.
 # Training:
 From the main folder run:
 
-1. python train.py 2>error_train.txt
+    python train.py 2>error_train.txt
 
 train.py is the main training file, contains most of the hyper-parameter and configuration setting.
 After training, the checkpoints will be located in the checkpoints folder.
@@ -25,7 +25,7 @@ suppressed_property (line 26) -> patentability (= PL).
 # Inference  :
 From the main folder run:
 
-1. python test.py 2>error_test.txt
+    python test.py 2>error_test.txt
 
 test.py is the main testing file, contains most of the hyper-parameter and configuration setting.
 

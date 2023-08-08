@@ -1,0 +1,19 @@
+name: MOMP
+channels:
+- pytorch
+- defaults
+- conda-forge
+dependencies:
+- python=3.6
+- pytorch=1.4.0
+- pandas=1.1.5
+- matplotlib=3.3.4
+- rdkit=2020.03.1
+- scipy=1.5.2
+- networkx=2.5.1
+- pip=21.2.2
+- pip:
+  - numpy==1.19.2
+  - scikit-learn==0.19.0
+  - smilesPE
+  - joblib==1.1.0

@@ -1,14 +1,14 @@
 Molecular Optimization Model with Patentability Constraint (MOMP)
 
 ## Installation:
-1. Install conda or miniconda.
-2. Set up the environment by running the following commands from the main folder:
-   i. `conda env create -f environment.yml`
-   ii. `conda activate MOMP`
-3. Download the SureChEMBL dataset from: [SureChEMBL Dataset](http://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBLccs/)
-   i. Place the downloaded dataset in the `dataset/SureChEMBL` folder.
-   ii. Run: `python handle_patents_dataset.py` from the main folder.
-   iii. Move the generated `SureChEMBL.txt` file to `dataset/SureChEMBL`.
+1. Install conda or miniconda. \
+2. Set up the environment by running the following commands from the main folder: \
+   i. `conda env create -f environment.yml` \
+   ii. `conda activate MOMP` \
+3. Download the SureChEMBL dataset from: [SureChEMBL Dataset](http://ftp.ebi.ac.uk/pub/databases/chembl/SureChEMBLccs/) \
+   i. Place the downloaded dataset in the `dataset/SureChEMBL` folder. \
+   ii. Run: `python handle_patents_dataset.py` from the main folder. \
+   iii. Move the generated `SureChEMBL.txt` file to `dataset/SureChEMBL`. \
 
 **Note:** Alternatively, to save time on preprocessing the data, you can download the `patentsFp.pkl` file from the following link: [patentsFp.pkl](https://drive.google.com/file/d/1Ry2u9kmfEN6donEtUWlT3Dx1W4qho-hJ/view?usp=sharing). Place the downloaded `patentsFp.pkl` file in the `dataset/PL/` folder.
 

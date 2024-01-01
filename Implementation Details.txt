@@ -1,0 +1,16 @@
+Our code and data are available publicly.
+
+METN: 
+	Embedding dimension 256, max molecule length during inference 90. 
+	Encoder -- bidirectional GRU, hidden dimension 256, followed by 2 FC with 256 neurons, for $\mu$ and $\sigma$. 
+	Decoder -- FC layer with 512 neurons, followed by 3-layered GRU, dropout 0.5 between layers, hidden dimension 512 and a FC with vocabulary length neurons. 
+	Training -- Adam optimizer \cite{kingma2014adam}. Initial learning rate $3 \cdot 10^{-3}$, final $3\cdot 10^{-4}$ using cosine annealing scheduler with restart after 10 epochs. 
+	Mini-batch size 32. Pre-trained for $E_{METN}$=3 for QED and 27 for DRD2.
+
+EETN and Extended-EETN: 
+	Translator -- Bottleneck structure. Conv block (filter size 7), stride-2 conv downsampling block (filter size 3), 4 residual blocks, stride-2 transposed conv upsampling block 
+	(filter size 3), conv (filter size 7) followed by Tanh and 2 FC with 1,152 and 256 neurons separated by BN, LeakyReLU, and Dropout (0.2).
+
+End-to-end model training: 
+	Adam optimizer, learning rate $3 \cdot 10^{-4}$. Mini-batch size 32. Max epochs $E_{maxTrain}$=12 for QED and 18 for DRD2. 
+	$\lambda_{AB} = \lambda_{BC} = \lambda_{AC} = 2$. Data is shuffled during training.
